@@ -1,0 +1,570 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilos do Header */
+header {
+    margin-top: 30px;
+    background-color: #06d2ab;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+header .logo {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    margin-top: 1%;
+  
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #6c7473;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #6c7473;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustando o tamanho da fonte da logo */
+    header .logo {
+        font-size: 2.5rem; /* Logo menor em telas menores */
+    }
+    
+    /* Ajustando o layout do menu de navegação */
+    header nav ul {
+        flex-direction: column; /* Coloca os itens do menu na vertical */
+        gap: 10px;
+    }
+
+    /* Ajustando os links de navegação */
+    header nav a {
+        font-size: 1rem; /* Fontes menores para links de navegação */
+    }
+
+    /* Ajustando o tamanho do título da hero section */
+    .hero h1 {
+        font-size: 2rem; /* Título menor em dispositivos móveis */
+    }
+
+    /* Ajustando o tamanho da descrição da hero section */
+    .hero p {
+        font-size: 1rem; /* Texto menor em dispositivos móveis */
+    }
+
+    /* Ajustando o botão */
+    .cta-btn {
+        font-size: 1rem; /* Botão menor */
+        padding: 8px 16px; /* Menor padding */
+    }
+}
+
+
+/* seção Sobre Nós */
+#sobrenos {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+#sobrenos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sobrenos1 {
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+}
+
+.sobrenos1 p {
+    margin-top: 25px;
+    list-style-position: inside;
+}
+
+.sobrenos1 li {
+    margin-top: 19px;
+    margin-bottom: 0%;
+}
+
+.sobrenos1 ul p {
+    margin-top: 8px;
+    list-style-position: inside;
+}
+
+.sobrenos-image {
+    width: 100%;        /* Faz com que a imagem ocupe 100% da largura */
+    height: 300px;      /* Mantém a proporção da imagem */
+    margin-top: 10px;
+    margin-bottom: 30px;/* Espaçamento acima da imagem */
+    display: block;     /* Remove qualquer espaço indesejado abaixo da imagem */
+    object-fit: cover;  /* Garante que a imagem cubra toda a área sem distorcer */
+    object-position: 100% 70%;
+}
+
+/* Seção de Serviços */
+#servicos {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+#servicos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.servico {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+.servico h3 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.servico ul {
+    margin-top: 10px;
+    list-style-position: inside;
+}
+
+.servico ul li {
+    margin-bottom: 15px;
+}
+
+/* Contato */
+#contato {
+    padding: 40px;
+    background-color: #fff;
+}
+
+#contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos do Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Definindo animações básicas */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Botões com efeito de transição */
+.cta-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #007BFF;
+    transform: scale(1.2);
+}
+
+.whatsapp-btn:hover, .instagram-btn:hover, .email-btn:hover {
+    background-color: #25d366;
+    transform: scale(1.1);
+}
+
+.instagram-btn:hover {
+    background-color: #e4405f;
+}
+
+.email-btn:hover {
+    background-color: #06d2ab;
+}
+
+/* Navegação com efeito de transição */
+nav ul li {
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;  /* Distribui o espaço entre logo e os itens de navegação */
+    align-items: center; 
+}
+
+.logo_img img {
+    height: 85px; /* Define o tamanho do logo */
+    width: auto;  /* Mantém a proporção do logo */
+}
+
+.promo-image {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura */
+    height: 450px;  
+                 /* Mantém a proporção da imagem */
+    margin-top: 10px;
+    margin-bottom: 30px; /* Espaçamento acima da imagem */
+    display: block; /* Remove qualquer espaço indesejado abaixo da imagem */
+    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+    object-position: 100% 43%; 
+}
+
+.limpeza2-image {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura */
+    height: 300px;  
+                 /* Mantém a proporção da imagem */
+    margin-top: 10px;
+    margin-bottom: 30px; /* Espaçamento acima da imagem */
+    display: block; /* Remove qualquer espaço indesejado abaixo da imagem */
+    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+    object-position: 100% 49%; 
+}
+
+.limpezaobra-image {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura */
+    height: 300px;  
+                 /* Mantém a proporção da imagem */
+    margin-top: 10px;
+    margin-bottom: 30px; /* Espaçamento acima da imagem */
+    display: block; /* Remove qualquer espaço indesejado abaixo da imagem */
+    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+    object-position: 100% 32%; 
+}
+
+/* Estilos para o menu hamburguer */
+nav ul li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+/* Estilos para o menu em dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+      
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Estilo geral para os ícones de contato */
+.contato-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 30px;
+}
+
+.contato-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.contato-buttons a:hover {
+    background-color: #f1f1f1; /* Fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+}
+
+/* Tamanho das imagens de contato */
+.contact-icon {
+    width: 40px;   /* Tamanho fixo das imagens */
+    height: 40px;  /* Mantém as imagens quadradas */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    transition: transform 0.3s ease; /* Suaviza a animação do hover */ 
+}
+
+.contato-buttons a:hover .contact-icon {
+    transform: scale(1.1); /* Aumenta a imagem quando o botão é hover */
+}
+
+/* Estilos para os botões de contato específicos de cada rede social */
+
+/* WhatsApp */
+.whatsapp-btn {
+    background-color: #25d366; /* Cor de fundo do botão WhatsApp */
+    color: white; /* Cor do texto (branco) */
+}
+
+/* Instagram */
+.instagram-btn {
+    background-color: #e4405f; /* Cor de fundo do botão Instagram */
+    color: white; /* Cor do texto (branco) */
+}
+
+/* E-mail */
+.email-btn {
+    background-color: #06d2ab; /* Cor de fundo do botão E-mail */
+    color: white; /* Cor do texto (branco) */
+}
+
+@media (max-width: 768px) {
+    .contato-buttons {
+        flex-direction: column; /* Organiza os botões verticalmente em telas pequenas */
+        gap: 15px; /* Ajusta o espaçamento entre os botões */
+    }
+
+    .contato-buttons a {
+        padding: 10px 15px; /* Menor padding nos botões */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    .contact-icon {
+        width: 35px;  /* Reduz o tamanho dos ícones em dispositivos móveis */
+        height: 35px; /* Mantém a proporção do ícone */
+    }
+
+    .contato-buttons a:hover {
+        transform: scale(1.1); /* Aumenta o tamanho do botão com o hover */
+    }
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilos do Header */
+header {
+    margin-top: 30px;
+    background-color: #06d2ab;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* Alinha logo e menu à esquerda e à direita */
+    align-items: center;
+    position: relative;
+}
+
+/* Logo imagem */
+.logo_img img {
+    height: 50px;
+    width: auto;
+}
+
+/* Menu de navegação */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Menu Hamburguer */
+.menu-btn {
+    display: none; /* Esconde o botão do menu hamburguer em telas grandes */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.menu-btn .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 1%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #6c7473;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #6c7473;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Torna o menu hamburguer visível em telas pequenas */
+    .menu-btn {
+        display: flex;
+    }
+
+    /* Esconde o menu de navegação padrão em telas pequenas */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #06d2ab;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Mostra o menu de navegação quando o botão do menu é clicado */
+    header nav ul.show {
+        display: flex;
+    }
+
+    /* Altera o tamanho da logo em telas menores */
+    header .logo {
+        font-size: 2rem;
+    }
+
+    /* Ajusta os links do menu */
+    header nav a {
+        font-size: 1.2rem;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    /* Ajusta o título da seção hero */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Ajusta o tamanho do botão */
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Quando o menu é aberto */
+nav ul.show {
+    display: flex;
+}
+
+/* Estilo do botão de menu ativo (quando clicado) */
+.menu-btn.open .bar:nth-child(1) {
+    transform: rotate(45deg); /* Roda a primeira barra */
+}
+
+.menu-btn.open .bar:nth-child(2) {
+    opacity: 0; /* Esconde a segunda barra */
+}
+
+.menu-btn.open .bar:nth-child(3) {
+    transform: rotate(-45deg); /* Roda a terceira barra */
+}

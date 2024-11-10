@@ -55,7 +55,7 @@ header nav a {
     margin-bottom: 20px;
 }
 
-.cta-btn {
+.ct-btn {
     background-color: #6c7473;
     color: white;
     border: none;
@@ -65,7 +65,7 @@ header nav a {
     transition: background-color 0.3s ease;
 }
 
-.cta-btn:hover {
+.ct-btn:hover {
     background-color: #6c7473;
 }
 
@@ -98,7 +98,7 @@ header nav a {
     }
 
     /* Ajustando o botão */
-    .cta-btn {
+    .ct-btn {
         font-size: 1rem; /* Botão menor */
         padding: 8px 16px; /* Menor padding */
     }
@@ -214,11 +214,11 @@ footer {
 }
 
 /* Botões com efeito de transição */
-.cta-btn {
+.ct-btn {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cta-btn:hover {
+.ct-btn:hover {
     background-color: #007BFF;
     transform: scale(1.2);
 }
@@ -336,7 +336,7 @@ nav ul li {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -488,8 +488,8 @@ header nav a {
     margin-bottom: 20px;
 }
 
-.cta-btn {
-    background-color: #06d2ab;
+.ct-btn {
+    background-color: #6c7473;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -498,7 +498,7 @@ header nav a {
     transition: background-color 0.3s ease;
 }
 
-.cta-btn:hover {
+.ct-btn:hover {
     background-color: #6c7473;
 }
 
@@ -546,7 +546,7 @@ header nav a {
     }
 
     /* Ajusta o tamanho do botão */
-    .cta-btn {
+    .ct-btn {
         font-size: 1rem;
         padding: 10px 15px;
     }

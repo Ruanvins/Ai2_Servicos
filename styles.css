@@ -170,7 +170,7 @@ header nav a {
 }
 
 .servico h3 {
-    color: #007BFF;
+    color: #06d2ab;
     margin-bottom: 20px;
 }
 
@@ -192,6 +192,7 @@ header nav a {
 #contato h2 {
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 /* Estilos do Footer */
@@ -488,7 +489,7 @@ header nav a {
 }
 
 .cta-btn {
-    background-color: #6c7473;
+    background-color: #06d2ab;
     color: white;
     border: none;
     padding: 10px 20px;

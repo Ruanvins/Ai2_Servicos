@@ -1,6 +1,6 @@
 
 // Interação com o botão "Solicite um Orçamento"
-document.getElementById('cta-button').addEventListener('click', function() {
+document.getElementById('ct-button').addEventListener('click', function() {
     alert('Entre em contato para solicitar um orçamento e transformar seu ambiente!');
 });
 

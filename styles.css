@@ -247,7 +247,7 @@ nav ul li:hover {
 nav {
     display: flex;
     justify-content: space-between;  /* Distribui o espaço entre logo e os itens de navegação */
-    align-items: center; 
+    align-items: center;
 }
 
 .logo_img img {
